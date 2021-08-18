@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="searchTool">
+            <h1>GitHub Repo Viewer</h1>
+            <p class="subHead">A tool to view the most recently edited repos of a GitHub user/org, and the most recent commits on those&nbsp;repos.</p>
+            <hr>
+            <p class="directions">Enter the GitHub username, how many repos, and how many commits you would like to see, and then press&nbsp;search!</p>
+            <form id="usernameForm">
+                <label for="usernameInput">Username</label>
+                <input id="usernameInput" type="text" placeholder="Username"></input>
+                <label for="repoQuantityInput">Repos (default: 5)</label>
+                <input id="repoQuantityInput" type="number" placeholder="5"></input>
+                <label for="commitQuantityInput">Commits (default: 10)</label>
+                <input id="commitQuantityInput" type="number" placeholder="10"></input>
+                <input type="submit" value="SEARCH"></input>
+            </form>
+            <div id="userProfile" class="hidden"></div>
+            <ul id="searchResults"></ul>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
